@@ -14,7 +14,7 @@ const Data = [
         "Invictus, de Paco Rabanne: el aroma de la victoria, la esencia de los héroes. Eufóricamente adictivo, una potente inyección de adrenalina para los ganadores seriales. Poder, coraje, victoria destilada en una atrevida explosión de frescura y calor. ",
       precio: "$97.900",
       sku: "1262201",
-      stock: 15,
+      stock: 0,
     },
     {
       id: 2,

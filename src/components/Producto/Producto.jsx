@@ -9,6 +9,20 @@ const Producto = () => {
       <h2>Productos</h2>
       <div className="container producto__container">
         {Data.map(({ id, Image, nombre, descripcion, precio, sku, stock }) => {
+   let stockMessage;
+
+   if (stock > 1) {
+     stockMessage = <span>{stock} en stock</span>;
+   } else if (stock === 1) {
+     stockMessage = <span>{stock} en stock</span>;
+   } else {
+     stockMessage = <span>Sin stock</span>;
+   }
+
+
+
+
+
           return (
             <article key={id} className="producto__item">
               <div className="producto__item-image">
@@ -33,7 +47,7 @@ const Producto = () => {
                     SKU: <span className="white-text">{sku}</span>
                   </p>
                   <p className="producto__stock">
-                    Stock: <span className="white-text">{stock}</span>
+                  Stock: <span className="white-text">{stockMessage}</span>
                   </p>
                 </div>
               </div>
