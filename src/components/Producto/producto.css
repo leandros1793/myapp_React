@@ -1,0 +1,91 @@
+.producto__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .producto__item {
+    display: flex;
+    flex-direction: column;
+    
+ 
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: var(--color-bg-variant);
+   
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition)
+    ;
+  
+  }
+  
+  .producto__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+  }
+  
+  .producto__item-image {
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 95%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .producto__item-image img {
+    width: 100%;
+    height: 350px; /* Altura fija para las imágenes */
+    object-fit: cover;
+  }
+  .producto__description-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color-primary); /* Elige un color que destaque */
+  }
+  
+  .producto__item-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Para que las tarjetas tengan la misma altura */
+  }
+
+
+  .producto__item-details h3 {
+    margin-bottom: 10px; /* Agrega espacio entre el nombre y la descripción */
+    font-size: 1.2em; /* Aumenta el tamaño del nombre */
+    font-weight: bold; /* Hace que el nombre sea más visible */
+    color: var(--color-primary); /* Usa un color distintivo */
+  }
+  
+
+  .producto__description {
+    flex-grow: 1;
+    margin-bottom: 3px;
+  }
+
+.producto__info p {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary); /* Color común para las etiquetas */
+  }
+  
+  .producto__info .white-text {
+    color: white; /* Color blanco para el valor */
+  }
+  
+  .producto__price {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-bg-white);
+  }
+  
+.producto__sku,
+.producto__stock {
+  margin: 5px 0;
+}
+
+  
